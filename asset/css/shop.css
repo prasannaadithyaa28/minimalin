@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navi{
+    width: 100%;
+    height: 170px;
+    font-weight: 900;
+}
+.upper-nav{
+    width: 85%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+
+}
+.logo{
+    height: 29%;
+}
+.info{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    gap: 15px;
+}
+.call{
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.icons{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    gap: 20px;
+}
+#currency{
+    border: none;
+    background:none;
+}
+.menu{
+    width: 10%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;    
+    font-weight: 700;
+}
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu a:hover{
+    color: rgb(18, 170, 175);
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+.menu li{
+    list-style-type: none;
+}
+.empty{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.suppp{
+    font-weight: 100;
+}
+.home-prd{
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235,235,235);
+    margin-bottom: 60px;
+}
+.main-con{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.items{
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+.det{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 80px;
+    align-items: center;
+    font-size: x-large;
+}
+#custamise{
+    width: 170px;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+.cato{
+    width: 100%;
+    height: 400px;
+}
+.img-1{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+}
+.img-2{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.product-2{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn-3{
+    font-size: xx-large;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    background-color: white;
+}
+.btn-3:hover{
+    background-color: rgb(235,183,63);
+    color: white;
+}
+.in-icons{
+    position: absolute;
+    left: 60px;
+    top: 180px;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    opacity: 0;
+}
+.product-2:hover .in-icons{
+    opacity: 1;
+}
+.product-2:hover .img-2{
+    opacity: 1;
+}
+.grid{
+    width: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.filter{
+    width: 25%;
+    height: 100%;
+}
+

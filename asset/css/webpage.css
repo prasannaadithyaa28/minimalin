@@ -24,6 +24,15 @@ body{
 .logo{
     height: 29%;
 }
+.info1{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
 .info{
     width: 20%;
     height: 100%;
@@ -60,6 +69,7 @@ body{
     justify-content: center;
     margin: 0 auto;
     align-items: center;    
+    font-weight: 700;
 }
 .menu{
     width: 50%;
@@ -76,13 +86,13 @@ body{
 .menu li{
     list-style-type: none;
 }
+
 .bg{
     background-image: url(https://minimalin-demo.myshopify.com/cdn/shop/files/fashion-custom-slide-6_1920x.png?v=1695147484);
     height: 500px;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .content{
     width: 330px;
@@ -170,8 +180,6 @@ body{
     width: 250px;
     height: 250px;
     border-radius: 20px;
-    top: 0;
-    left: 0;
     opacity: 0;
     position: absolute;
 }
@@ -188,17 +196,16 @@ body{
     border-radius: 5px;
     border: none;
     height: 35px;
+    background-color: white;
 }
 .btn-3:hover{
     background-color: rgb(235,183,63);
     color: white;
 }
-.p-tag{
-    /* color: rgb(234, 182, 62); */
-}
+
 .in-icons{
     position: absolute;
-    left: 50px;
+    left: 80px;
     top: 180px;
     display: flex;
     justify-content: space-between;
@@ -321,6 +328,10 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    font-weight: 800;
+}
+.product-4:hover{
+    color: rgb(234, 182, 62);
 }
 .grid-4{
     width: 75%;
@@ -332,7 +343,7 @@ body{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     margin: 0 auto;
-    width: 1300px;
+    width: 100%;
     height: 100%;
 }
 .emoji-2{
@@ -341,8 +352,14 @@ body{
     display: flex;
     justify-content: center;
 }
+.emoji-22{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
 .grid-6{
-    width: 1100px;
+    width: 75%;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr) ;
@@ -350,6 +367,14 @@ body{
     gap: 35px;
 }
 .blog{
+    width: 350px;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.blog-1{
     width: 350px;
     height: 100%;
     margin-top: 100px;
@@ -397,9 +422,306 @@ body{
     width: 250px;
     border-radius: 25px;
 }
+.ig-img-1{
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+.ig-img-2{
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
 .grid-7{
     display: flex;
     gap: 30px;
-    width: 1370px;
+    width: 90%;
+    height: 300px;
     margin: 0 auto;
+
+}
+.footerr{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(252,246,234);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.head{
+    text-align: center;
+    margin-top: 50px;
+}
+.desc{
+    text-align: center;
+}
+.mail{
+    width: 700px;
+    height: 50px;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(34, 30, 30);
+    border-radius: 5px;
+    align-items: center;
+    margin: 0 auto;
+}
+.searchbox{
+    width: 83%;
+    height: 100%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: white;
+}
+.searchbtn{
+    width: 17%;
+    height: 100%;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:rgb(234,183,62) ;
+    color: white;
+    font-weight: 900;
+}
+.abt{
+    width: 30%;
+    height: 110%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.foot-para{
+    justify-content: center;
+    display: flex;
+}
+.links{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: end;
+}
+.f-tags{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.f-tags a:hover{
+    color: rgb(238, 228, 110);
+}
+.f-tags li a{
+    text-decoration: none;
+    color: black;
+}
+.f-tags li{
+    list-style-type: none;
+}
+.foot-icons{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 60%;
+    justify-content: space-between;
+}
+.empty{
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid rgb(246,226,177);
+}
+.end{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.menu-ic{
+    display: none;
+}
+@media(max-width:1200px){
+    .body{
+        width: 100%;
+    }
+    .menu-ic{
+        display: block;
+    }
+    .info{
+        display: none;
+    }
+    #currency{
+        display: none;
+    }
+    .logo{
+        height: 50%;
+    }
+    .icons{
+        width: 10%;
+    }
+    .lower-nav{
+        display: none;
+    }
+    .navi{
+        height: 120px;
+    }
+    .sub-con{
+        width: 90%;
+        margin: 30px auto;
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .bg{
+        width: 100%;
+        height: 350px;
+    }
+    .content{
+        margin-left: 450px;
+        height: 80%;
+        font-size: medium;
+    }
+    .img{
+        width:250px ;
+        height: 250px;
+    }
+    .info1{
+        width: 100%;
+    }
+    .grid-2{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .grid-3{
+        height: 100%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-4{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .img-4{
+        height: 300px;
+        width: 300px;
+    }
+    .emoji-22{
+        display: none;
+    }
+    .grid-5{
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .emoji-2{
+        width: 100%;
+    }
+    .blog-1{
+        display: none;
+    }
+    .grid-6{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .ig-img-1{
+        display: none;
+    }
+    .grid-7{
+       justify-content: center;
+    }
+    .footerr{
+        height: auto;
+        font-size: small;
+    }
+}
+@media(max-width:600px){
+    .logo{
+        height: 30%;
+    }
+    .icons{
+        width: 15%;
+    }
+    .content{
+        margin-left: 0;
+        align-items: center;
+        font-size: medium;
+        width: 100%;
+        justify-content: right;
+        padding-top: 30px;
+    }
+    .bg{
+        height: 70vh;
+        width: 100%;
+        background-size: cover;
+        background-image: url(https://minimalin-demo.myshopify.com/cdn/shop/files/fashion-custom-slide-6-mobile_575x.png?v=1695453557);
+    }
+    .sub-con{
+        grid-template-columns: repeat(1,1fr);
+        width: 70%;
+        justify-content: center;
+        align-content: start;
+        height: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .info1{
+        justify-content: start;
+        padding-left: 15px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-2{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .in-icons{
+        left: 55px;
+    }
+    .grid-3{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid-4{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid-6{
+        grid-template-columns: repeat(1,1fr);
+    }.ig-img-2{
+        display: none;
+    }
+    .footerr{
+        width: 100%;
+        height: 100%;
+        font-size: large;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot-para{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .links{
+        margin-left: 25px;
+        width: 100%;
+        gap: 10px;
+    }
+    .abt{
+        width: 90%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .f-tags{
+        width: 100%;
+        gap: 10px;
+    }
+    .empty{
+        height: 25px;
+    }
+    .mail{
+        width: 350px;
+        height: 40px;
+    }
+    .searchbtn{
+        font-size: xx-small;
+    }
 }
